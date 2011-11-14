@@ -1,0 +1,3 @@
+[Mon Jul 05 22:28:49 2010] [error] [client 86.179.54.247] client denied by server configuration: /home/default/dev.csurl.eu/user/htdocs/code/
+[Mon Jul 05 22:28:49 2010] [error] [client 86.179.54.247] client denied by server configuration: /home/default/dev.csurl.eu/user/htdocs/code/system/init.php
+[Mon Jul 05 22:28:52 2010] [error] [client 86.179.54.247] client denied by server configuration: /home/default/dev.csurl.eu/user/htdocs/code/system/init.php

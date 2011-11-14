@@ -1,0 +1,43 @@
+<!-- module tag -->
+<module name="pages" draft="true" lang="true">
+	
+	<!-- database table tag -->
+	<dbtable name="pages">
+		<field name="id" type="auto" primarykey="true" show="false" />
+		<field name="site_id" type="int" show="false" default="1" />
+		<field name="parent_id" type="int" default="0" label="Parent page" falsevalue="0" falselabel="" values="{pages.id}" labels="{pages.label}" skip-where="id = parent_id" />
+		<field name="depth" type="int" show="false" default="0" />
+		<field name="position" type="int" show="false" default="0" label="#" />
+		<field name="title" type="varchar" required="true" />
+		<field name="label" type="varchar" required="true" />
+		<field name="name" type="varchar" required="true" unique="true" />
+		<field name="content" type="text" label="Page Content" />
+		<field name="module" type="varchar" label="Module Name" />
+		<field name="theme" type="varchar" label="Page theme"  />
+		<field name="menu_main" type="boolean" label="Show in main menu" />
+		<field name="menu_top" type="boolean" label="Show in header menu" />
+		<field name="menu_foot" type="boolean" label="Show in footer menu" />
+		<field name="status" type="int" default="0" show="false" />
+		<field name="version" type="int" default="0" show="false" />
+		<field name="created" type="date" insert="now" show="false" />
+		<field name="updated" type="date" default="now" update="now" show="false" />
+	</dbtable>
+	
+	<!-- admin tag -->
+	<admin 
+		label="Pages" 
+		keywords-filter="label,title" 
+		list="position,label" 
+		actions="edit,attach,delete" 
+		order-by="position ASC"
+		options="add" />
+	
+	<!-- wysiwyg tag -->
+	<wysiwyg 
+		for="admin"
+		fields="content"
+	/>
+	
+	<!-- search tag - make the module searchable -->
+	<search fields="name,label,content" />
+</module>

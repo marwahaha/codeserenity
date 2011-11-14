@@ -1,0 +1,14 @@
+<module name="documents">
+	<dbtable name="documents">
+		<field name="id" type="auto" primarykey="true" show="false" />
+		<field name="title" type="varchar" label="Title" />
+		<field name="label" type="varchar" label="Label" />
+		<field name="name" type="varchar" label="Slug" unique="true" required="true" />
+		<field name="summary" type="text" length="255" rows="1" label="Summary" />
+		<field name="file" type="file" path="uploads/documents/" label="File" />
+		<field name="status" type="boolean" default="0" show="false" />
+		<field name="created" type="date" show="false" insert="now" />
+		<field name="updated" type="date" default="now" update="now" show="false" />
+	</dbtable>
+	<admin label="Documents" keywords-filter="name,label,title" list="label" options="add" actions="edit,delete" />
+</module>

@@ -1,0 +1,88 @@
+#menu ul li.item {
+	background:url(../img/gradient.jpg) repeat-x bottom left;
+	border:1px solid #ccc;
+	position:relative;
+	margin:0 0 5px 0;
+	font-size:0.9em;
+}
+#menu ul ul li.item {
+	margin-left:10px;
+}
+#menu ul li.item:hover,
+#menu ul li.item.hover {
+	background-position:center left;
+}
+#menu ul li.active {
+	background-position:top left;
+}
+	#menu ul li.active a,
+	#menu ul li.item:hover a,
+	#menu ul li.item.hover a{
+		color:#333;
+	}
+	#menu ul li.item a {
+		background:url(../img/module_default.png) no-repeat 3px 3px;
+		padding-left:21px;
+		text-decoration:none;
+		font-weight:bold;
+		display:block;
+		height:25px;
+		color:#666;
+	}
+		#menu ul li.item a strong {
+			position:relative;
+			left:7px;
+			top:6px;
+		}
+		#menu ul li.item a span {
+			background:url(../img/toggler.png) no-repeat center center;
+			position:absolute;
+			padding:10px;
+			right:2px;
+			top:3px;
+		}
+		#menu ul li.item a span.open {
+			background:url(../img/toggler_open.png) no-repeat center center;
+		}
+/*
+	Specific item and subitems icons
+*/
+#menu ul li.item-overview a {
+	background-image:url(../img/module_overview.png);
+}
+#menu ul li.item-developer a {
+	background-image:url(../img/module_developer.png);
+}
+#menu ul li.item-modules a {
+	background-image:url(../img/module_modules.png);
+}
+#menu ul li.item-database a {
+	background-image:url(../img/module_database.png);
+}
+#menu ul li.item-pages a {
+	background-image:url(../img/module_pages.png);
+}
+#menu ul li.item-images a {
+	background-image:url(../img/module_images.png);
+}
+#menu ul li.item-redirects a {
+	background-image:url(../img/module_redirects.png);
+}
+#menu ul li.item-users_groups a {
+	background-image:url(../img/module_users_groups.png);
+}
+#menu ul li.item-users a {
+	background-image:url(../img/module_users.png);
+}
+#menu ul li.item-sites a {
+	background-image:url(../img/module_sites.png);
+}
+#menu ul li.item-configuration a {
+	background-image:url(../img/module_configuration.png);
+}
+#menu ul li.item-libraries a {
+	background-image:url(../img/module_libraries.png);
+}
+#menu ul li.item-documents a {
+	background-image:url(../img/module_documents.png);
+}

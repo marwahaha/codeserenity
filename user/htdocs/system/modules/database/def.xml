@@ -1,0 +1,7 @@
+<!-- module tag -->
+<module name="database">
+	
+	<!-- admin tag -->
+	<admin options="clean_tables" />
+	
+</module>

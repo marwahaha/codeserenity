@@ -1,0 +1,15 @@
+<module name="sites">
+	<dbtable name="sites">
+		<field name="id" type="auto" primarykey="true" show="false" />
+		<field name="domain" type="varchar" label="Domain" unique="true" required="true" />
+		<field name="theme" type="varchar" label="Theme" default="default" />
+		<field name="language" type="varchar" label="Language" default="en-gb" />
+		<field name="auth_username" type="varchar" label="HTTP auth. username" />
+		<field name="auth_password" type="password" label="HTTP auth. password" />
+		<field name="maintenance" type="boolean" default="0" label="Maintenance mode" />
+		<field name="status" type="int" default="1" show="false" />
+		<field name="created" type="date" show="false" insert="now" />
+		<field name="updated" type="date" default="now" update="now" show="false" />
+	</dbtable>	
+	<admin label="Sites" filters="domain" list="domain" options="add" actions="edit,delete" />
+</module>

@@ -1,0 +1,105 @@
+form.cs_form {
+	background:#fff;
+	border:1px solid #ccc;
+	padding:10px;
+}
+	fieldset.cs_fieldset {
+		background:#dadada;
+		border:1px solid #f1f1f1;
+		padding:10px;
+	}
+		legend.cs_legend {
+		
+		}
+		div.cs_field {
+			margin-bottom:10px;
+		}
+		div.cs_field:after {
+			content:" ";
+			display:block;
+			height:0;
+			clear:both;
+			visibility:hidden;
+		}
+			div.cs_label {
+				width:28%;
+				float:left;
+				text-align:right;
+				font-size:0.85em;
+				padding:2px 0;
+			}
+			div.cs_input {
+				width:70%;
+				float:right;
+			}
+				div.cs_input span.cs_form_file_link {
+					margin-top:5px;
+					display:block;				
+				}
+				div.cs_input span.cs_form_file_delete {
+					padding-left:10px;
+					color:red;
+				}
+				div.cs_input span.cs_form_file_link,
+				div.cs_input img.cs_form_file_image {
+					border:1px solid #666;
+					padding:10px;
+					margin-top:5px;
+					display:block;
+					background:#fff;
+				}
+				div.cs_input span.cs_form_file_link {
+					width:40%;
+				}
+				form.cs_form input.cs_form_text,
+				form.cs_form input.cs_form_file,
+				form.cs_form input.cs_form_password,
+				form.cs_form textarea,
+				form.cs_form select {
+					background:#f4f4f4;
+					border:1px solid #ccc;
+					padding:3px 5px;
+					color:#333;
+				}
+				form.cs_form select {
+					padding:2px;
+					margin:0;
+				}
+					form.cs_form select option {
+						margin:0;
+						padding:0px 4px;
+					}
+					form.cs_form input.cs_form_text:hover, 
+					form.cs_form input.cs_form_file:hover, 
+					form.cs_form input.cs_form_password:hover,
+					form.cs_form textarea:hover, 
+					form.cs_form select:hover{
+						border:1px solid #aaa;
+					}
+					form.cs_form input.cs_form_text:focus, 
+					form.cs_form input.cs_form_file:focus, 
+					form.cs_form input.cs_form_password:focus,
+					form.cs_form textarea:focus, 
+					form.cs_form select:focus {
+						background:#fff;
+						border:1px solid #999;
+					}
+				form.cs_form input.cs_form_button,
+				form.cs_form input.cs_form_submit {
+					border:1px solid #ccc;
+					padding:5px 10px;
+					cursor:pointer;
+					color:#333;
+				}
+					form.cs_form  input.cs_form_button:hover,
+					form.cs_form  input.cs_form_submit:hover {
+						color:#000;
+					}
+				span.cs_error {
+					padding-left:10px;
+					font-weight:bold;
+					color:#cc0033;	
+				}
+		div.cs_button {
+			text-align:center;
+		}

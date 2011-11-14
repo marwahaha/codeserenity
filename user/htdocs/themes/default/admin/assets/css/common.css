@@ -1,0 +1,427 @@
+/* global tags styling */
+body {	
+	background:#fff url(../img/body.png);
+	padding-top:1px; /* required otherwise the go to top doesn't go up to the top properly - weird one */
+	font-family:verdana;
+	min-width:900px;
+	font-size:100%;
+	color:#333;
+}
+/* default list styling */
+table.list {
+	border:1px solid #aaa;
+	margin-bottom:0.6em;
+	border-bottom:none;
+	width:100%;
+}
+	table.list tr {
+		background:#eee;
+	}
+	table.list tr.even {
+		background:#e9e9e9;
+	}
+	table.list tr:hover,
+	table.list tr.hover {
+		background:#fff url(../img/stripes.png);
+	}
+	table.list tr.moving {
+		background:F7FAAC;
+	}
+		table.list th {
+			background:#ddd url(../img/gradient.jpg) repeat-x center left;
+			font-weight:bold;
+			color:#666;
+		}
+		table.list th, table.list td {
+			border-bottom:1px solid #aaa;
+			white-space: nowrap;
+			text-align: left;
+			vertical-align: middle;
+			padding:8px;
+		}
+		/* position field */
+		table.list th.position,
+		table.list td.field-position {
+			border-right:1px solid #ccc;
+			width:10px;
+		}
+		table.list td.field-position {
+			background:url(../img/arrow_updown.png) no-repeat 6px 9px;
+			cursor:move;
+		}
+h1 {
+	font-weight:bold;
+	margin:0 0 15px 0;
+	padding:0 0 10px 0;
+	border-bottom:1px solid #ccc;
+}
+a {
+	color:#333;
+}
+a:hover, a:focus {
+	color:#000;
+}
+/*
+	Layout
+*/
+#wrap {
+	margin:9px auto 10px auto; /* 9px at the top only as the body got 1px padding-top */
+	position:relative;
+	font-size:0.9em;
+	width:98%;
+}
+#head {
+	margin-bottom:10px;
+	font-size:0.7em;
+}
+#crumbs li {
+	float:left;
+	padding-right:5px;
+}
+#page {
+	border:1px solid #ccc;
+	background:#fff;
+	padding:10px;
+}
+/* default columns */
+#container {
+	padding-left:200px;
+}
+	#container .column {
+		position:relative;
+		float:left;
+	}
+#incontainer {
+	width:100%;
+}
+	#incontainer p {
+		margin-bottom:0.6em;
+	}
+#menu {
+	width:190px;
+	right:200px;
+	margin-left:-100%;
+}
+* html #menu {
+  left:150px;
+}
+#foot {
+	position:relative;
+	text-align:center;
+	padding-top:10px;
+	font-size:0.8em;
+}
+	#foot p {
+		margin-bottom:10px;
+	}
+/* options */
+.options {
+	margin-bottom:10px;
+}
+	.options ul {
+	}
+		.options ul li {
+			float:left;
+		}
+			.options ul li a {
+				background:#f1f1f1 url(../img/gradient.jpg) repeat-x center left;
+				border:1px solid #999;
+				text-decoration:none;
+				margin-right:10px;
+				font-size:0.75em;
+				display:block;
+				float:left;
+				padding:5px;
+				color:#666;
+			}
+				.options ul li a span {
+					background:url(../img/options_default.png) no-repeat center center;
+					padding:0 0 0 15px;
+				}
+			.options ul li a:hover {
+				border-color:#666;
+				text-decoration:none;
+				background:#f6f6f6;
+				color:#333;
+			}
+
+/* filters */
+#filter_toggler {
+	margin:-15px 5px 5px 5px;
+	text-align:right;
+	font-size:0.7em;
+	display:none;
+}
+.filters {
+	margin-bottom:10px;
+}
+	.filters form.cs_form {
+		padding:0;
+	}
+		.filters label {
+			font-size:0.8em;
+		}
+		.filters .cs_button,
+		.filters .cs_field {
+			margin:0 5px;
+			float:left;
+		}
+		.filters div.cs_button input.cs_form_submit {
+			padding:3px 5px 2px 5px;
+		}
+/* list actions */
+table.list td.actions,
+table.list td.status {
+	padding-top:4px;
+	padding-right:4px;
+	padding-bottom:4px;
+}
+table.list th.actions,
+table.list td.actions,
+table.list th.status,
+table.list td.status {
+	border-left:1px solid #ccc;
+}
+table.list th.actions,
+table.list td.actions {
+	/*min-width:450px;
+	 width:50%; */
+}
+table.list th.status,
+table.list td.status {
+	width:70px;
+}
+	table.list td.actions a {
+		background:#fff url(../img/gradient.jpg) repeat-x center left;
+		border:1px solid #aaa;
+		text-decoration:none;
+		margin-right:5px;
+		font-size:0.75em;
+		display:block;
+		color:#555;
+		float:left;
+	}
+	table.list td.actions a span {
+		background:transparent url(../img/action_default.png) no-repeat 2px 3px;
+		padding:5px 5px 5px 21px;
+		display:block;
+	}
+		table.list td.actions a:hover {
+			background-position:bottom left;
+			border-color:#999;
+			color:#333;
+		}
+	table.list td.status a.state {
+		background-position:top left;
+		border:none;
+	}
+	table.list td.status a.state:hover {
+		background-position:top left;
+		border:none;
+		color:#555;
+	}
+	table.list td.actions a.action-edit span {
+		background-image:url(../img/action_edit.png);
+	}
+	table.list td.actions a.action-delete {
+		float:right;
+	}
+	table.list td.actions a.action-delete span {
+		background-image:url(../img/action_delete.png);
+	}
+	table.list td.actions a.action-attach span {
+		background-image:url(../img/action_attach.png);
+	}
+	table.list td.actions a.action-schedule span {
+		background-image:url(../img/action_schedule.png);
+	}
+	table.list td.actions a.action-stats span {
+		background-image:url(../img/action_stats.png);
+	}
+	table.list td.actions a.action-preview span {
+		background-image:url(../img/action_preview.png);
+	}
+	table.list td.actions a.action-children span {
+		background-image:url(../img/action_children.png);
+	}
+	table.list td.actions a.action-crop span {
+		background-image:url(../img/action_crop.png);
+	}
+/* CMS messages */
+#cms-message {
+	position:absolute;
+	right:10px;
+	width:350px;
+	top:0;
+}
+	#cms-message div {
+		border:1px solid blue;
+		background:lightblue;
+		font-size:1.4em;
+		padding:5px;
+	}
+		#cms-message p {
+			background:transparent url(../img/message_info.png) no-repeat center left;
+			padding:10px 10px 10px 50px;
+		}
+		#cms-message span.close {
+			background:transparent url(../img/message_close.png) no-repeat top left;
+			position:absolute;
+			cursor:pointer;
+			display:block;
+			height:8px;
+			width:8px;
+			right:5px;
+			top:5px;
+		}
+		#cms-message div.error {
+			background-color:#F8E0E0;
+			border-color:darkred;
+			color:darkred;
+		}
+			#cms-message div.error p {
+				background-image:url(../img/message_error.png);
+			}
+		#cms-message div.warning {
+			background-color:#F6E3CE;
+			border-color:darkorange;
+			color:darkorange;
+		}
+			#cms-message div.warning p {
+				background-image:url(../img/message_warning.png);
+			}
+		#cms-message div.success {
+			background-color:#CEF6CE;
+			border-color:darkgreen;
+			color:darkgreen;
+		}
+			#cms-message div.success p {
+				background-image:url(../img/message_success.png);
+			}
+/* global buttons */
+a.back_button,
+#back_to_top {
+	background:url(../img/back_to_top.png) no-repeat 0px 5px;
+	text-decoration:none;
+	padding:5px 0 0 11px;
+	position:absolute;
+	font-size:0.8em;
+	right:10px;
+	top:0;
+}
+	a.back_button:hover,
+	#back_to_top:hover {
+		text-decoration:underline;
+		background-position:0px 3px;
+	}
+
+a.back_button {
+	background:url(../img/back_to.png) no-repeat 2px 7px;
+	padding:5px 0 5px 15px;
+	position:relative;
+	right:auto;
+	top:auto;
+}
+	a.back_button:hover {
+		background-position:0px 7px;
+	}
+a.switch span {
+	background:#fff url(../img/switch.png) no-repeat top left;
+	border:1px solid #aaa;
+	text-decoration:none;
+	font-size:0.8em;
+	height:22px;
+	width:60px;
+	display:block;
+	color:#555;
+	float:left;
+}
+a.switch span.disabled {
+	background:#fff url(../img/switch.png) no-repeat top right;
+}
+/* Code serenity DBFORM overwrite */
+form.cs_form {
+	background:#f4f4f4;
+	margin-bottom:0.6em;
+}
+	form.cs_form div.form-title label,
+	form.cs_form div.form-title input.cs_form_text {
+		font-size:1.2em;
+	}
+		form.cs_form div.form-title input.cs_form_text {
+			width:450px;
+		}
+	form.cs_form div.form-name label,
+	form.cs_form div.form-name input.cs_form_text {
+		font-size:0.8em;
+	}
+	form.cs_form div.form-label label,
+	form.cs_form div.form-label input.cs_form_text {
+		font-size:0.9em;
+	}
+fieldset.cs_fieldset {
+	background:#fff url(../img/stripes.png);
+}
+div.cs_label {
+	padding:5px;
+}
+div.cs_button input.cs_form_submit {
+	background:#ddd url(../img/gradient.jpg) repeat-x center left;
+	border:1px solid #999;
+	text-decoration:none;
+	margin-right:10px;
+	font-size:0.8em;
+	padding:5px;
+	color:#666;
+}
+	div.cs_button input.cs_form_submit:hover {
+		background:#ccc url(../img/gradient.jpg) repeat-x bottom left;
+		border-color:#666;
+		text-decoration:none;
+		color:#333;
+	}
+/* Cropping image interface (here as can be on different pages) */
+#crop-ui {
+	position:relative;
+}
+	#crop-ui legend {
+		display:none;
+	}
+#crop-toolbar {
+	margin:10px;
+}
+#crop-stats {
+	margin:10px;
+}
+#crop-image {
+	position:relative;
+}
+#crop-preview {
+	border:1px solid #ccc;
+	position:absolute;
+	overflow:hidden;
+	right:50px;
+	top:50px;
+}
+/* login page style */
+.login #wrap {
+	width:400px;
+}
+.login #container {
+	padding-left:0;
+}
+.login #menu {
+	display:none;
+}
+.login form.cs_form {
+	margin-bottom:0;
+}
+.login form.cs_form div.cs_input {
+	width:57%;
+}
+.login form.cs_form div.cs_label {
+	width:30%;
+}
+.login form.cs_form input.cs_form_text {
+	width:165px;
+}

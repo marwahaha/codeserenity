@@ -1,0 +1,14 @@
+.cms_clear:after {
+	content:".";
+	display:block;
+	clear:both;
+	visibility:hidden;
+	line-height:0;
+	height:0;
+} 
+html[xmlns] .cms_clear {
+	display:block;
+} 
+* html .cms_clear {
+	height:1%;
+}

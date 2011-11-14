@@ -1,0 +1,4 @@
+@import "/themes/shared/css/reset.css";
+@import "/themes/shared/css/tools.css";
+@import "common.css";
+@import "wysiwyg.css";

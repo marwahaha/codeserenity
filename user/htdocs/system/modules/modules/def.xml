@@ -1,0 +1,16 @@
+<module name="modules">
+	<dbtable name="modules">
+		<field name="id" type="auto" primarykey="true" show="false" />
+		<field name="site_id" type="int" default="1" show="false" />
+		<field name="parent_id" type="int" default="0" falsevalue="0" falselabel="None" labels="{modules.label}" values="{modules.id}" htmltype="select" label="Parent module" />
+		<field name="position" type="int" show="false" default="0" label="#" />
+		<field name="name" type="varchar" label="Slug" unique="true" required="true" />
+		<field name="label" type="varchar" label="Title" required="true" />
+		<field name="menu" type="boolean" default="0" label="Treat as menu item only?" />
+		<field name="developer" type="boolean" default="1" label="Developer eyes only?" />
+		<field name="status" type="int" default="1" show="false" />
+		<field name="created" type="date" show="false" insert="now" />
+		<field name="updated" type="date" default="now" update="now" show="false" />
+	</dbtable>	
+	<admin label="Modules" keywords-filter="name,label" list="position,label" order-by="position ASC" actions="edit,delete" options="add,load_all_xml" />
+</module>

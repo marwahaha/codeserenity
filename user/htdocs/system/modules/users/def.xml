@@ -1,0 +1,16 @@
+<module name="users">
+	<dbtable name="users">
+		<field name="id" type="auto" primarykey="true" show="false" />
+		<field name="site_id" type="int" show="false" default="1" />
+		<field name="group_id" type="int" label="Group" labels="{users_groups.title}" values="{users_groups.id}" htmltype="select" />
+		<field name="username" type="varchar" length="75" label="Username" unique="true" required="true" />
+		<field name="email" type="varchar" label="Email" required="true" />
+		<field name="password" type="password" encrypt="md5" label="Password" required="true" />
+		<field name="status" type="int" default="0" show="false" />
+		<field name="logged" type="date" show="false" default="now" />
+		<field name="created" type="date" show="false" insert="now" />
+		<field name="updated" type="date" default="now" update="now" show="false" />
+	</dbtable>	
+	<admin label="Users" filters="username,group_id" list="username" options="add" actions="edit,delete" />	
+	<login fields="username,password" />
+</module>

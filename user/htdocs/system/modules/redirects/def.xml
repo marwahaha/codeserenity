@@ -1,0 +1,13 @@
+<module name="redirects">
+	<dbtable name="redirects">
+		<field name="id" type="auto" primarykey="true" show="false" />
+		<field name="site_id" type="int" default="1" show="false" />
+		<field name="original" type="varchar" label="Original URL" unique="true" required="true" />
+		<field name="new" type="varchar" label="New URL" required="true" />
+		<field name="type" type="varchar" label="Redirection type" labels="301,302" value="301,302" htmltype="checkbox" />
+		<field name="status" type="int" default="1" show="false" />
+		<field name="created" type="date" show="false" insert="now" />
+		<field name="updated" type="date" default="now" update="now" show="false" />
+	</dbtable>	
+	<admin label="Redirects" filters="original" list="original,new" options="add" actions="edit,delete" />
+</module>

@@ -1,0 +1,57 @@
+/* text-shadow */
+h1 {
+	text-shadow:#ccc 1px 1px 1px;
+}
+#menu ul li.item a strong {
+	text-shadow:#ccc 1px 1px 1px;
+}
+/* box shadow */
+table.list,
+#page,
+#menu ul li.item,
+.filters .cs_form {
+	-webkit-box-shadow:#999 1px 1px 1px;
+	-moz-box-shadow:#999 1px 1px 1px;
+	box-shadow:#999 1px 1px 1px;
+}
+
+/* 5px rounded all around */
+#cms-message div,
+table.list,
+#page,
+#menu ul li.item,
+a.switch span,
+.cs_form,
+.cs_fieldset,
+a, .cs_form input, .cs_form select, .cs_form textarea {
+	-webkit-border-radius:5px;
+	-moz-border-radius:5px;
+	border-radius:5px;
+}
+.mceEditor a {
+	-webkit-border-radius:0;
+	-moz-border-radius:0;
+	border-radius:0;
+}
+
+/* table rows corners */
+table.list tr:first-child th:first-child {
+	-webkit-border-top-left-radius:5px;
+	-moz-border-radius-topleft:5px;
+	border-top-left-radius:5px;
+}
+table.list tr:first-child th:last-child {
+	-webkit-border-top-right-radius:5px;
+	-moz-border-radius-topright:5px;
+	border-top-right-radius:5px;
+}
+table.list tr:last-child td:first-child {
+	-webkit-border-bottom-left-radius:5px;
+	-moz-border-radius-bottomleft:5px;
+	border-bottom-left-radius:5px;
+}
+table.list tr:last-child td:last-child {
+	-webkit-border-bottom-right-radius:5px;
+	-moz-border-radius-bottomright:5px;
+	border-bottom-right-radius:5px;
+}

@@ -1,0 +1,16 @@
+<module name="users_groups">
+	<dbtable name="users_groups">
+		<field name="id" type="auto" primarykey="true" show="false" />
+		<field name="site_id" type="int" show="false" default="1" />
+		<field name="title" type="varchar" label="Group name" required="true" />
+		<field name="name" type="varchar" label="Slug" unique="true" required="true" />
+		<field name="view" type="varchar" label="Can view item in" labels="{modules.label}" values="{modules.id}" where="developer=0 AND menu!=1" htmltype="checkbox" />
+		<field name="add" type="varchar" label="Can add item in" labels="{modules.label}" values="{modules.id}" where="developer=0 AND menu!=1" htmltype="checkbox" />
+		<field name="edit" type="varchar" label="Can edit item in" labels="{modules.label}" values="{modules.id}" where="developer=0 AND menu!=1" htmltype="checkbox" />
+		<field name="delete" type="varchar" label="Can delete item in" labels="{modules.label}" values="{modules.id}" where="developer=0 AND menu!=1" htmltype="checkbox" />
+		<field name="status" type="int" default="0" show="false" />
+		<field name="created" type="date" show="false" insert="now" />
+		<field name="updated" type="date" default="now" update="now" show="false" />
+	</dbtable>	
+	<admin label="User groups" filters="name" list="title" options="add" actions="edit,delete" />
+</module>
