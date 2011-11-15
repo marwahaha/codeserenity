@@ -1,6 +1,22 @@
-.wysiwyg strong {
-	font-weight:bold;
+.wysiwyg {
+	font-size:14px;
+	margin:10px;
 }
-.wysiwyg p {
-	margin:0 0 0.6em 0;
-}
+	.wysiwyg strong {
+		font-weight:bold;
+	}
+	.wysiwyg p {
+		margin:0 0 0.6em 0;
+		line-height:16px;
+	}
+	.wysiwyg h4  {
+		font-weight:bold;
+		margin-bottom:0.6em;
+	}
+	.wysiwyg ul {
+		list-style:disc;
+		padding:10px 10px 10px 35px;
+	}
+		.wysiwyg ul li {
+			padding:0 0 5px 0;
+		}

@@ -1,0 +1,78 @@
+div.cooltabs {
+	overflow:hidden;
+	position:relative;	
+}
+	div.cooltabs h3 {
+		margin-top:20px;
+		padding:10px 0;
+		font-weight:bold;
+		font-size:16px;
+		clear:both;
+	}
+	div.cooltabs-wrap {
+		position:relative;
+	}
+		div.cooltabs-wrap ul {			
+			position:relative;
+			z-index:999;
+		}
+		div.cooltabs-wrap ul li {
+			white-space:nowrap;
+			margin-right:35px;
+			margin-left:11px;
+			padding-top:3px;
+			font-size:14px;
+			cursor:pointer;
+			color:#fff;
+		}
+			div.cooltabs-wrap ul li.cooltabs-active {
+				color:#333;
+			}
+				div.cooltabs-wrap ul li span.cooltabs-on {
+					color:#333;
+				}
+				div.cooltabs-wrap ul li span.cooltabs-off {
+					color:#fff;
+				}
+		div.cooltabs-wrap div, div.cooltabs-wrap ul, div.cooltabs-wrap ul li {
+			float:left;
+		}
+		div.cooltabs-clear {
+			clear:both;
+		}
+		div.cooltabs-content-wrap {
+			position:absolute;
+			top:30px;
+		}
+		div.cooltabs-content  h3 {
+			display:none;
+		}
+		div.cooltabs-arrow {
+			height:35px;
+			width:100%;
+		}
+		div.cooltabs-middle {
+			border-radius:4px 4px 0 0;
+			background: #333333; /* Old browsers */
+			background: -moz-linear-gradient(top,  #333333 0%, #666666 40%, #555555 60%, #cccccc 100%); /* FF3.6+ */
+			background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#333333), color-stop(49%,#666666), color-stop(52%,#555555), color-stop(100%,#cccccc)); /* Chrome,Safari4+ */
+			background: -webkit-linear-gradient(top,  #333333 0%,#666666 49%,#555555 52%,#cccccc 100%); /* Chrome10+,Safari5.1+ */
+			background: -o-linear-gradient(top,  #333333 0%,#666666 49%,#555555 52%,#cccccc 100%); /* Opera 11.10+ */
+			background: -ms-linear-gradient(top,  #333333 0%,#666666 49%,#555555 52%,#cccccc 100%); /* IE10+ */
+			background: linear-gradient(top,  #333333 0%,#666666 49%,#555555 52%,#cccccc 100%); /* W3C */
+			filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#333333', endColorstr='#cccccc',GradientType=0 ); /* IE6-9 */
+			padding:11px 8px;
+			width:762px;
+			box-shadow:0px 2px 2px rgba(0,0,0,0.5);
+		}
+		div.cooltabs-tab {
+			position:absolute;	
+			z-index:998;
+			left:10px;
+			top:9px;
+		}
+		div.cooltabs-tab-middle {
+			background: #fff;
+			border-radius:5px 5px 0 0;
+			padding:0 10px;
+		}

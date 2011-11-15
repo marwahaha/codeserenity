@@ -1,219 +1,55 @@
 body {
-	background:#fff;
-	font-family:arial;
-	font-size:16px;
+	position:relative;
+	margin:10px auto;
+	width:780px;
+	background: #b5bdc8;
+	font-family:sans-serif;
 	color:#333;
 }
-body.ie {
-	font-size:100%;
+h1, h2 {
+	text-shadow:2px 2px 3px rgba(0,0,0,0.5), -2px -2px 3px rgba(0,0,0,0.2);
+	font-family:sans-serif;
 }
-#skip {
-	position:absolute;
-	top:-10000px;
-}
-#wrap { }
-#site-search {
-	position:relative;
-	margin:0 auto;
-	overflow:hidden;
-	width:75%;
-}
-	#site-search form {
-		background:transparent url(../img/gradient.jpg) repeat-x center center;
-		-moz-box-shadow:2px 2px 5px rgba(0,0,0,0.5);
-		-moz-border-radius:5px;
-		box-shadow:2px 2px 5px rgba(0,0,0,0.5);
-		border-radius:5px;
-		border:1px solid #ccc;
-		float:right;
-		margin:0.6em;
-		padding:0.3em;
-		width:25%;
-	}
-	#site-search legend ,
-	#site-search label {
-		display:none;
-	}
-	#site-search input {
-		-moz-border-radius:5px;
-		border-radius:5px;
-		border:1px solid #ccc;
-		padding:5px;
-		width:148px;
-	}
-	#site-search input:focus,
-	#site-search input:hover {
-		border-color:#999;
-	}
-	#site-search #search-submit {
-		background:#f4f4f4;
-		width:75px;
-		color:#666;
-		cursor:pointer;
-		margin-left:0.3em;
-	}
-#menu {
-	margin: 0.6em 0 0.6em 0;
-	border-top: 1px solid #ccc;
-	border-bottom: 1px solid #ccc;
-	background:transparent url(../img/gradient.jpg) repeat-x center center;
-	-moz-box-shadow:0px 2px 5px rgba(0,0,0,0.5);
-	box-shadow:0px 2px 5px rgba(0,0,0,0.5);
-}
-	#menu ul {
-		margin:0 auto;
-		overflow:hidden;
-		width:75%;
-	}
-		#menu ul li {
-			float:left;
-		}
-			#menu ul li a {
-				display:block;
-				text-decoration:none;
-				font-weight:bold;
-				font-size:0.9em;
-				padding:0.6em 0;
-				margin:0 2em 0 0;
-				color:#666;
-				text-shadow:1px 1px 1px #ccc, -1px -1px 1px #ccc;
-			}
-			#menu ul li a:hover,
-			#menu ul li a:focus {
-				color:#3465A4;
-			}
-				#menu ul li a span {
-				
-				}
-				#menu ul li a:hover span,
-				#menu ul li a:hover span {
-				
-				}
-		#menu ul li.active {
-		
-		}
-			#menu ul li.active a {
-				color:#3465A4;
-			}
-				#menu ul li.active a span {
-				
-				}
-#content {
-	margin:0.6em auto;
-	overflow:hidden;
-	padding:0.6em;
-	width:75%;
-}
-	#crumbs {
-		display:none;
-	}
-	#content h1 {
-		margin:0 0 1.2em 0;
-	}
-	#content #main {
-		overflow:hidden;
-		float:left;
-		width:68%;
-	}
-	#content #side {
-		width:27%;
-		float:left;
-		margin-left:2%;
-		border-left:1px solid #ccc;
-		padding-left:2%;
-	}
-#twitter-feed {
-	
-}
-
-#gtweetfeed-wrap {
-	-moz-box-shadow:2px 2px 5px rgba(0,0,0,0.5);
-	box-shadow:2px 2px 5px rgba(0,0,0,0.5);
-	-moz-border-radius:5px;
-	border-radius:5px;
-	padding:5px 5px 0 5px;
-	border:1px solid #ccc;
-	position:relative;
-	font-family:arial;
-	font-size:12px;
-	color:#444;
-}
-#gtweetfeed-header {
-	position:absolute;
-	font-weight:bold;
-	color:#3465A4;
-	left:10px;
-	top:8px;
-}
-#gtweetfeed-controls {
-	-moz-border-radius:5px 5px 0 0;
-	border-radius:5px 5px 0 0;
-	border:1px solid #ddd;
-	border-bottom:1px solid #ccc;
+h1 {
+	font-size:20px;
 	margin-bottom:5px;
-	background:transparent url(../img/gradient.jpg) repeat-x center center;
-	height:20px;
 }
-#gtweetfeed-controls:after {
-	content:".";
-	display:block;
-	clear:both;
-	visibility:hidden;
-	line-height:0;
-	height:0;
+h2 {
+	font-size:12px;
+	text-indent:20px;
 }
-#gtweetfeed-less,
-#gtweetfeed-more {
-	display:block;
-	*display:inline-block;
-	width:20px;
-	height:20px;
-	float:right;
+#social {
+	position:absolute;
+	text-align:right;
+	font-family:verdana;
+	font-size:11px;
+	right:10px;
+	top:0;
 }
-#gtweetfeed-less {
-	background:url(../img/minus.png) no-repeat;
-}
-#gtweetfeed-more {
-	background:url(../img/plus.png) no-repeat;
-}
-#gtweetfeed-loader {
-	background:url(../img/loader.gif) no-repeat center center;
-	height:28px;
-}
-#gtweetfeed-list {
-	list-style:none;
-	padding:0;
-	margin:0;
-}
-	#gtweetfeed-list li {
-		background:url(../img/icon.png) no-repeat 5px 2px;
-		border-bottom:1px solid #ccc;
-		margin:0 0 5px 0;
-		padding:0 5px 5px 35px;
+	#social li {
+		margin:2px 0;
+		padding-right:5px;
 	}
-	#gtweetfeed-list li.gtweetfeed-first {
-	
+	#social a {
+		text-shadow:1px 1px 2px rgba(0,0,0,0.25);
+		text-decoration:none;
+		color:#666;
 	}
-	#gtweetfeed-list li.gtweetfeed-last {
-		border-bottom:1px solid #fff;
+	#social a:hover {
+		text-decoration:underline;
+		color:#000;
 	}
-		#gtweetfeed-list li a {
-			text-decoration:none;
-			font-size:10px;
-			color:#999;
-		}
-			#gtweetfeed-list li a:hover {
-				text-decoration:underline;
-			}
-		#gtweetfeed-list li span {
-			padding-right:10px;
-		}
-			#gtweetfeed-list li span a {
-				font-weight:bold;
-				font-size:12px;
-				color:#000;
-			}
-			#gtweetfeed-list li span a:hover {
-				text-decoration:underline;
-				color:#cc0033;
-			}
+#content {
+	position:relative;
+	margin:10px 0;
+	overflow:hidden;
+	border-radius:5px;
+	border:1px solid #ccc;
+	background:#fff;
+	box-shadow:5px 5px 15px rgba(0,0,0,0.5);
+	padding-bottom:30px;
+}
+#foot {
+	padding:0 10px;
+	font-size:12px;
+}

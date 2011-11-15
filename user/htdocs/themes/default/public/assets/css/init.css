@@ -1,4 +1,5 @@
 @import "/themes/shared/css/reset.css";
 @import "/themes/shared/css/tools.css";
-@import "common.css";
-@import "wysiwyg.css";
+@import "/themes/shared/css/cooltabs.css";
+@import "/themes/default/public/assets/css/common.css";
+@import "/themes/default/public/assets/css/wysiwyg.css";
