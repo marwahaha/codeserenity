@@ -10,25 +10,27 @@
 	<title>Gilles Cochez - {$page.title}</title>
 </head>
 <body>
-<h1>Gilles Cochez</h1>
-<h2>Developing with passion since 1997</h2>
-<ul id="social">
-	<li>
-		<a href="http://blog.gillescochez.info" title="View my development blog">
-			Development blog &gt;
-		</a>
-	</li>
-	<li>
-		<a href="http://uk.linkedin.com/in/gcochez" title="View my linkedIn profil">
-			LinkedIn profil &gt;
-		</a>
-	</li>
-	<li>
-		<a href="https://github.com/gillescochez/" title="View my github profil">
-			Github profil &gt;
-		</a>
-	</li>
-</ul>
+<div id="head">
+	<h1>Gilles Cochez</h1>
+	<h2>Developing with passion since 1997</h2>
+	<ul id="social">
+		<li>
+			<a href="http://blog.gillescochez.info" title="View my development blog">
+				Development blog &gt;
+			</a>
+		</li>
+		<li>
+			<a href="http://uk.linkedin.com/in/gcochez" title="View my linkedIn profil">
+				LinkedIn profil &gt;
+			</a>
+		</li>
+		<li>
+			<a href="https://github.com/gillescochez/" title="View my github profil">
+				Github profil &gt;
+			</a>
+		</li>
+	</ul>
+</div>
 <div id="content">
 	{section name=i loop=$page.result}
 		<div class="cooltabs-content">

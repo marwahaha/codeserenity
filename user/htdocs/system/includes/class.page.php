@@ -74,11 +74,13 @@ class page {
 		
 		$fields = explode(',', $this->config['wysiwyg'][0]['fields']);
 		
-		// loop through the array
-		foreach ($arr as $k => $v) {
-		
-			// clean if needed
-			if (in_array($k, $fields)) $arr[$k] = str_replace('\"', '"', $v);
+		foreach ($fields as $key => $field) {
+
+			$arr[$field] = str_replace(array(
+					'\\"', "\\'"
+				), array(
+					'"', "'"
+				) , $arr[$field]);
 		}
 		
 		// return clean array
