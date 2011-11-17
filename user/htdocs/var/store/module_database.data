@@ -1,0 +1,2 @@
+$data["module"]["name"] = "database";
+$data["admin"][0]["options"] = "clean_tables";

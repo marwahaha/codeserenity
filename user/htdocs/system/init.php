@@ -8,7 +8,7 @@ define('DB_CONFIG', 'mysql://codeserenity:*dbx69sql*@localhost/codeserenity');
 define('PREFIX','devcs_');
 
 // Call Code Serenity framework
-require '/home/default/'.$_SERVER['SERVER_NAME'].'/codeserenity/init.php';
+require '/home/default/gillescochez.info/codeserenity/init.php';
 $cs = new codeserenity();
 
 // Load and start the CMS class
