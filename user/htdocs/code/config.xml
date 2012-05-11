@@ -19,8 +19,8 @@
 			type: http (optional, only HTTP supported but hoping to support ftp/webdav in the future)
 	-->
 	<authentication
-		username="gilles"
-		password="couilles"
+		username=""
+		password=""
 		enable="false"
 		title="Authentication required"
 	/>
@@ -47,10 +47,10 @@
 		name="default"
 		type="mysql"
 		host="localhost"
-		database="codeserenity"
-		username="codeserenity"
-		password="*dbx69s3rv3r*"
-		prefix="devcs_" 
+		database=""
+		username=""
+		password=""
+		prefix="" 
 	/>
 	<!--
 		OUTPUT CONFIGURATION
